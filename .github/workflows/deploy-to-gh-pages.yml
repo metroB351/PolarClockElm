@@ -25,7 +25,7 @@ jobs:
 
     - name: Deploy to Github Pages
       run: |
-        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/sandydoo/PolarClockElm.git
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/metroB351/PolarClockElm.git
         yarn gh-pages -d dist -u "github-actions-bot <support+actions@github.com>"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
